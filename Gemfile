@@ -2,8 +2,8 @@
 source "https://rubygems.org"
 
 gem "sinatra"
-gem "activerecord"
-gem "sinatra-activerecord"
+gem 'activerecord', :require => 'active_record'
+gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
 gem "rake"
 gem "bcrypt"
 gem "rspec"
@@ -18,4 +18,6 @@ group :development do
   gem "tux"
   gem "rspec"
   gem "capybara"
+  gem 'shotgun'
+  gem 'thin'
 end
